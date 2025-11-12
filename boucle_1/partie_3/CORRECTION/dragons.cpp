@@ -13,14 +13,14 @@ public :
     Creature(int pv, int pa, int niveau): pv(pv), pa(pa), niveau(niveau){}
 
     void affiche(){
-        cout << "Creature" << endl; 
-        cout << "PV : " << pv << endl; 
-        cout << "PA : " << pa << endl; 
+        cout << "Creature" ; 
+        cout << "PV : " << pv ; 
+        cout << "PA : " << pa ; 
         cout << "Niveau :"<< niveau << endl; 
     }
 
     int attaque(){
-        return pa; 
+        return pa*niveau; 
     }
 
     void subitDegat(int degats){
@@ -28,10 +28,7 @@ public :
     }
 
     bool estVivant(){
-        if(pv > 0)
-            return true; 
-        else 
-            return false; 
+        return (pv > 0); 
     }
 };
 
@@ -47,9 +44,9 @@ public :
     Heros(string nom, int pv, int pa): nom(nom), pv(pv), pa(pa){}
 
     void affiche(){
-        cout << "Heros"<< endl; 
-        cout << "Nom :"<< nom << endl;
-        cout << "PV : " << pv << endl; 
+        cout << "Heros"; 
+        cout << "Nom : " << nom;
+        cout << "PV : " << pv; 
         cout << "PA : " << pa << endl; 
     }
 
@@ -62,10 +59,7 @@ public :
     }
 
     bool estVivant(){
-        if(pv > 0)
-            return true; 
-        else 
-            return false; 
+        return (pv > 0);  
     }
 }; 
 

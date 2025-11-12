@@ -1,0 +1,22 @@
+@startuml dragons
+class creature{
+    - int pv
+    - int pa
+    - int niveau
+     
+    + void affiche()
+    + int attaque()
+    + void suibitDegat(int degat)
+    + bool estVivant()
+}
+
+class heros{
+    - String nom
+    - int pa
+    - int pv
+    + affiche()
+    + attaque()
+    + suibitDegat(int degat)
+    + bool estVivant()
+}
+@enduml
