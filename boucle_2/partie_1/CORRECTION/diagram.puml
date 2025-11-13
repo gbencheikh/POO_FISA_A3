@@ -1,0 +1,27 @@
+@startuml bankAccount
+class BankAccount{
+    - double balance
+     
+    + double getBalance()
+    + void setBalance(int balance)
+    + void retire(double amount)
+    + void depose(double amount)
+    + void affiche()
+}
+
+class Transaction{
+    - BankAccount* to
+    - BankAccount* from
+    - double amount 
+
+    + BankAccount* getTo()
+    + BankAccount* getFrom()
+    + double getAmount()
+    + setTo(BankAcount*)
+    + setFrom(BankAcount*)
+    + setAmount(double)
+    + bool execute()
+}
+
+BankAccount <-- Transaction
+@enduml
