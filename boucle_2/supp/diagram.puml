@@ -1,0 +1,21 @@
+@startuml livres
+class Livre{
+    - String auteur
+    - String titre
+    - Date date_publication
+    + {static} int cpt 
+    + void Affiche()
+}
+
+class Date{
+    - int j
+    - int m
+    - int a
+
+    + {static} Affiche_jj_mm_aaaa()
+    + {static} Affiche_mm_jj_aaaa()
+    + {static} Affiche_mm_XX_aaaa()
+}
+
+Livre <-- Date
+@enduml
