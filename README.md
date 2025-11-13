@@ -61,7 +61,7 @@ Il s’agira de concevoir un **logiciel orienté objet complet en C++**, en appl
 
 ---
 
-## 🧾 Structure du dépôt
+## Structure du dépôt
 
 ```bash
 .
@@ -74,4 +74,30 @@ Il s’agira de concevoir un **logiciel orienté objet complet en C++**, en appl
 │   ├── partie_1/
 │   ├── partie_2/
 │   └── ...
+````
+
+## Collaboration
+
+Chaque élève est invité à : 
+
+1. Cloner le dépôt sur sa machine 
+
+```bash
+git clone https://github.com/gbencheikh/POO_FISA_A3
+````
+
+2. Créer une branche personnelle pour travailler sur les exercices : 
+
+```bash
+git checkout -b prenom-nom
+````
+
+3. Pousser ses modifications après validation locale : 
+
+```bash
+git add .
+git commit -m "Ajout de la partie 3 boucle 2"
+git push origin prenom-nom
+````
+
 
