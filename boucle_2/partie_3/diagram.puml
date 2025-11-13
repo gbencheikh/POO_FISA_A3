@@ -1,16 +1,16 @@
 @startuml dragons
-class creature{
+class Creature{
     - int pv
     - int pa
     - int niveau
-     
+    + {static} int cpt
     + void affiche()
     + int attaque()
     + void suibitDegat(int degat)
     + bool estVivant()
 }
 
-class heros{
+class Heros{
     - String nom
     - int pa
     - int pv
