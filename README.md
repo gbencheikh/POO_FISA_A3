@@ -43,6 +43,7 @@ Les **corrections des workshops** seront publiées progressivement dans ce dép�
 - **g++** (`build-essential`)
 - **Git**
 - **VS Code** (éditeur conseillé)
+- **Google Test** (pour les tests unitaires)
 - Langage : **C++ standard**
 
 ⚙️ Reportez-vous au [tutoriel d’installation](ressources/tutoriel_installation_linux_vscode.pdf) pour configurer correctement Linux (WSL) et Visual Studio Code.
@@ -100,4 +101,38 @@ git commit -m "Ajout de la partie 3 boucle 2"
 git push origin prenom-nom
 ````
 
+## Tests unitaires
 
+Les tests unitaires sont des petites parties de code qui permettent de vérifier que les différentes fonctions de notre programme fonctionnent correctement. Chaque test se concentre sur une fonction spécifique et vérifie que celle-ci donne les résultats attendus pour des données d'entrée précises. Par exemple, si nous avons une fonction d'addition, un test unitaire vérifiera que cette fonction retourne bien la somme des nombres que nous lui passons en paramètres.
+
+### Exemple d'un test unitaire
+
+Supposons que nous avons une classe Calculatrice avec une fonction addition qui additionne deux nombres. Voici comment on pourrait écrire un test unitaire pour vérifier cette fonction :
+
+```bash
+// Rappel : on utilise Google Test pour les tests
+TEST(CalculatriceTests, TestAddition) {
+    // Vérifie que 2 + 3 = 5
+    EXPECT_DOUBLE_EQ(Calculatrice::addition(2.0, 3.0), 5.0); 
+}
+````
+Dans cet exemple :
+
+* **TEST** est la commande qui crée un test unitaire.
+* **CalculatriceTests** est le nom de notre groupe de tests (pour organiser plusieurs tests similaires).
+* **TestAddition** est le nom de ce test spécifique.
+* **EXPECT_DOUBLE_EQ** est utilisée dans les tests unitaires pour comparer deux valeurs en vérifiant leur égalité avec une certaine précision. Dans cet exemple, elle vérifie que le résultat de Calculatrice::addition(2.0, 3.0) est égal au résultat attendu 5.0.
+
+### Compilation des tests unitaires
+
+Installer Google Test (si ce n'est pas déjà fait) : Vous pouvez suivre les instructions sur Google Test GitHub pour installer Google Test.
+
+```bash
+sudo apt install libgtest-dev
+````
+
+Les tests unitaires peuvent être compilés comme suit :
+
+```bash
+g++ test.cpp -o test.exe -lgtest -lgtest_main -pthread
+````
