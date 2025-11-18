@@ -1,0 +1,49 @@
+@startuml
+
+class Piece {
+    # nb_windows : int 
+    # color : string 
+
+    + Piece(int, string)
+    + set_nb_windows(int) : void 
+    + set_color(string) : void 
+    + get_nb_windows() : int 
+    + get_color() : string
+    + afficher_info() : void 
+}
+
+class Chambre{
+    - nb_lits 
+
+    + Chambre(int) 
+    + get_nb_lits() : int
+    + set_nb_lits(int) : void 
+    + afficher_info() : void 
+}
+class Salle_bain {
+    - has_shower : bool 
+
+    + Salle_bain(bool)
+    + set_has_shower(bool) : void
+    + get_has_shower() : bool
+    + afficher_info() : void
+}
+
+class Maison {
+    - T : Piece*
+
+    + Maison(int)
+    + getPieces() : Piece*
+    + getPiece(int) : Piece
+    + setPieces(Piece*) : void
+    + ajouterPiece(Piece) : void
+    + afficheInfo() : void
+    + getNbOfBathroom () : int
+    + getNbOfBedroom () : int 
+}
+
+Piece <|-- Chambre
+Piece <|-- Salle_bain
+Maison <-- Piece
+
+@enduml

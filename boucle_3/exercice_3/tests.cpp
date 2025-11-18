@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-//#include "rectangle.h"
-//#include "carre.h"
+#include "rectangle.h"
+#include "carre.h"
 
 // ========================
 // Tests Rectangle
