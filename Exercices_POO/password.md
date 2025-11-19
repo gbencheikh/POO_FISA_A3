@@ -1,6 +1,6 @@
 # Gestionnaire de mots de passe
 
-## 🎯 Objectif du bloc
+## 🎯 Objectif de l'exercice
 
 Vous devez créer une application pour gérer des mots de passe.  
 Chaque entrée de mot de passe contient :
