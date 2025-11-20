@@ -1,0 +1,43 @@
+@startuml
+
+abstract class Objet {
+    + {abstract} aire() : double
+    + {abstract} perimetre() : double
+    + {abstract} afficheInfo() : void
+}
+
+class Rectangle {
+    - largeur : double
+    - longueur : double
+
+    + Rectangle(l : double, lg : double)
+    + getLargeur() : double
+    + getLongueur() : double
+    + aire() : double
+    + perimetre() : double
+    + afficheInfo() : void
+}
+
+class Carre {
+    - cote : double
+
+    + Carre(c : double)
+    + getCote() : double
+    + aire() : double
+    + perimetre() : double
+    + afficheInfo() : void
+}
+
+class Test{
+    + {static} tests_reussis : int
+    + {static} tests_rates : int
+
+    + {static} printResult(bool condition, const string& testName) : void
+    + {static} ASSERT_EQ(double val1, double val2, string testName) : void
+    + {static} ASSERT_NEAR(double val1,double  val2, double epsilon, string testName) : void 
+}
+
+Objet <|-- Rectangle
+Objet <|-- Carre
+
+@enduml
