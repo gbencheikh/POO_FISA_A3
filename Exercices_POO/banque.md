@@ -66,35 +66,6 @@ Vous implémenterez les classes suivantes :
 
 ---
 
-## Utilisation de GitHub
- 
-Le dépôt doit contenir :
-- les fichiers sources,
-- les exécutables générés lors des tests.
-
-Chaque élève est invité à : 
-
-1. Cloner le dépôt sur sa machine 
-
-```bash
-git clone https://github.com/gbencheikh/POO_FISA_A3
-````
-
-2. Créer une branche personnelle pour travailler sur les exercices : 
-
-```bash
-git checkout -b prenom-nom
-````
-
-3. Pousser ses modifications après validation locale : 
-
-```bash
-git add .
-git commit -m "Ajout de la partie 3 boucle 2"
-git push origin prenom-nom
-````
----
-
 ### Consignes techniques
 -	Chaque classe doit être implémentée dans des fichiers séparés .h et .cpp.
 -	La fonction principale doit être implémenté dans un fichier main.cpp. Il doit générer un exécutable main.exe lors de la compilation.
