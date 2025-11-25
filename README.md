@@ -3,8 +3,8 @@
 ## 🎯 Objectif du bloc
 L’objectif de ce bloc est de **maîtriser les fondements de la programmation orientée objet (POO)** en **C++**.  
 À la fin de ce bloc, vous serez capables de **modéliser et de coder un logiciel complet en C++**, en respectant les standards de conception orientée objet.
+Ce dépôt contient les supports, correction des workshops, ressources et consignes liés au projet final du bloc POO. Vous trouverez ici les éléments nécessaires pour mener à bien le développement de votre application complète en C++, incluant conception, implémentation et tests.
 
----
 
 ## Organisation du bloc
 
@@ -24,8 +24,6 @@ Le bloc POO s’articule autour de plusieurs activités :
 - Durée : **2 semaines** (dont 1 dédiée au développement)
 - Soutenances : **08/12/2025**
 
----
-
 ## Déroulement pédagogique
 
 Chaque workshop permet de découvrir et de mettre en pratique une notion clé de la POO :
@@ -33,8 +31,6 @@ Chaque workshop permet de découvrir et de mettre en pratique une notion clé de
 ![Déroulement_bloc](ressources/deroulement_bloc.png)
 
 Les **corrections des workshops** seront publiées progressivement dans ce dépôt afin de vous aider à consolider vos connaissances.
-
----
 
 ## Environnement de développement requis
 
@@ -48,17 +44,31 @@ Les **corrections des workshops** seront publiées progressivement dans ce dép�
 
 ⚙️ Reportez-vous au [tutoriel d’installation](ressources/tutoriel_installation_linux_vscode.pdf) pour configurer correctement Linux (WSL) et Visual Studio Code.
 
----
-
 ## Projet final
+Le projet constitue la synthèse du bloc, il consiste à développer une implémentation complète du Jeu de la Vie de Conway, un automate cellulaire, tout en appliquant les principes fondamentaux de la POO [[voir détails](PROJET.md)].
 
-Le projet constitue la synthèse du bloc.  
 Il s’agira de concevoir un **logiciel orienté objet complet en C++**, en appliquant :
 - les principes d’encapsulation, d’héritage et de polymorphisme ;
 - une architecture modulaire claire ;
 - une gestion de code collaborative via Git.
 
 🗓️ **Soutenance du projet :** le **08 décembre 2025**
+
+## Utilisation de Git et GitHub
+
+Dans le cadre de ce projet, vous utiliserez Git et GitHub pour versionner votre code et collaborer efficacement avec votre binôme.
+
+Pour rappel, les principales commandes Git (initialisation, commit, push, pull, branches, etc.) sont disponibles dans ce [cheat-sheet officiel](https://git-scm.com/cheat-sheet). 
+
+Assurez-vous de :
+
+* Commiter régulièrement,
+
+* Rédiger des messages de commit explicites,
+
+* Travailler dans des branches cohérentes,
+
+* Utiliser les pull requests lors de la fusion.
 
 ---
 
