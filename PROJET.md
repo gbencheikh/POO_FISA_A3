@@ -6,11 +6,25 @@ Ce document présente de manière détaillée l'ensemble des consignes, ressourc
 
 Développer une application complète implémentant le **Jeu de la Vie**, avec :
 
-* une **version console**,
-* une **version graphique** basée sur **SFML**,
-* une architecture orientée objet propre et cohérente,
-* des tests unitaires,
-* une modélisation UML (classe, séquence, activité).
+<div>
+  <img src="ressources/Gospers_glider_gun.gif" alt="Jeu de la Vie" width="130" style="float: right; 
+            margin-left: 20px;
+            margin-right: 30px; 
+            margin-top: 5px; 
+            margin-bottom: 10px; 
+            border: 2px solid black; 
+            outline: 4px solid white; 
+            outline-offset: 2px;
+            ">
+
+  * une **version console**,
+  * une **version graphique** basée sur **SFML**,
+  * une architecture orientée objet propre et cohérente,
+  * des tests unitaires,
+  * une modélisation UML (classe, séquence, activité).
+</div>
+
+
 
 Ce projet doit démontrer votre maîtrise des **concepts clés de la POO** (encapsulation, modularité, héritage, polymorphisme, etc.).
 
