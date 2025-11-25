@@ -6,8 +6,7 @@ Ce document présente de manière détaillée l'ensemble des consignes, ressourc
 
 Développer une application complète implémentant le **Jeu de la Vie**, avec :
 
-<div>
-  <img src="ressources/Gospers_glider_gun.gif" alt="Jeu de la Vie" width="130" style="float: right; 
+<img src="ressources/Gospers_glider_gun.gif" alt="Jeu de la Vie" width="130" align="right" style="float: right; 
             margin-left: 20px;
             margin-right: 30px; 
             margin-top: 5px; 
@@ -15,6 +14,7 @@ Développer une application complète implémentant le **Jeu de la Vie**, avec :
             border: 2px solid black; 
             outline: 4px solid white; 
             outline-offset: 2px;
+            padding: 5px; 
             ">
 
   * une **version console**,
@@ -22,7 +22,7 @@ Développer une application complète implémentant le **Jeu de la Vie**, avec :
   * une architecture orientée objet propre et cohérente,
   * des tests unitaires,
   * une modélisation UML (classe, séquence, activité).
-</div>
+
 
 
 
