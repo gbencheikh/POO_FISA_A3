@@ -1,0 +1,43 @@
+@startuml
+
+class AvatarState {
+    # next* : AvatarState  
+    
+    + AvatarState(AvatarState*)
+    + {abstract} action() : void
+    + nextState() : AvatarState *
+}
+
+class Glad {
+    + action() : void
+}
+class Sad {
+    + action() : void
+}
+class Happy {
+    + action() : void
+}
+class Angry {
+    + action() : void
+}
+class Grumpy {
+    + action() : void
+}
+
+class Avatar {
+    - AvatarState *state
+    
+    + Avatar(AvatarState*)
+    + action() : void
+    + changeState() : void
+    + run() : void
+}
+AvatarState <|-- Glad
+AvatarState <|-- Sad
+AvatarState <|-- Happy
+AvatarState <|-- Angry
+AvatarState <|-- Grumpy
+
+Avatar <-- AvatarState
+
+@enduml
